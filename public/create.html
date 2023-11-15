@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Chief</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <a href="/">
+                <img class="logo" src="src/cook.svg" alt="logo">
+            </a>
+            <nav class="navigation-bar">
+                <ul class="nav-list">
+                    <li class="link"><a class="anchor" href="/">Главная</a></li>
+                    <li class="link"><a class="anchor" href="/recipes">Рецепты</a></li>
+                    <li class="link"><a class="anchor" href="/advice">Советы</a></li>
+                    <li class="link"><a class="anchor" href="/about">О портале</a></li>
+                </ul>
+            </nav>
+            <div class="search-login">
+                <div class="search">
+                    <input type="text" placeholder="Поиск" id="search-bar" class="search-bar">
+                    <ul class="search-results invisible"></ul>
+                </div>
+                <a href="/create" class="create">Добавить рецепт</a>
+            </div>
+        </div>
+        <form action="/newrecipe" method="post" id="createForm" class="create-form">
+            <h1>Добавьте рецепт</h1>
+            <label for="recipe_name">Название рецепта: </label>
+            <input type="text" id="recipe_name" name="recipe_name" class="form-input" required>
+            <label for="ingredients">Ингридиенты:</label>
+            <textarea id="ingredients" name="ingredients" rows="12" class="form-textarea" required></textarea>
+            <label for="instructions">Инструкция: </label>
+            <textarea name="instructions" id="instructions" rows="20" class="form-textarea" required></textarea>
+            <label for="author_name">Автор: </label>
+            <input type="text" id="author_name" name="author_name" class="form-input" required>
+            <button type="submit" class="form-btn">Добавить рецепт</button>
+        </form>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/create.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Chief</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <a href="/">
+                <img class="logo" src="/src/cook.svg" alt="logo">
+            </a>
+            <nav class="navigation-bar">
+                <ul class="nav-list">
+                    <li class="link"><a class="anchor" href="/">Главная</a></li>
+                    <li class="link"><a class="anchor" href="/recipes">Рецепты</a></li>
+                    <li class="link"><a class="anchor" href="/advice">Советы</a></li>
+                    <li class="link"><a class="anchor" href="/about">О портале</a></li>
+                </ul>
+            </nav>
+            <div class="search-login">
+                <div class="search">
+                    <input type="text" placeholder="Поиск" id="search-bar" class="search-bar">
+                    <ul class="search-results invisible"></ul>
+                </div>
+                <a href="/create" class="create">Добавить рецепт</a>
+            </div>
+        </div>
+        <h1 id="recipeName"></h1>
+        <ul id="ingredients" class="ingredients"></ul>
+        <ol id="instructions" class="instructions"></ol>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/main.js"></script>
+    <script src="/js/recipe.js"></script>
+</body>
+
+</html>
